@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Spotify Clone Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="App">
+      <div class="App__top-bar">
+        <div class="App__header">
+          <div class="App__song-navigation">
+            <div class="App__song-navigation-prev">
+              <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24"><polyline points="16 4 7 12 16 20" fill="none" stroke="#fff"></polyline></svg>
+            </div>
+            <div class="App__song-navigation-next">
+              <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24"><polyline points="8 4 17 12 8 20" fill="none" stroke="#fff"></polyline></svg>
+            </div>
+          </div>
+          <button class="App__user">
+            <div class="App__figure">
+                <svg viewBox="0 0 254 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <image href="https://media.istockphoto.com/id/178600303/photo/flamy-symbol.jpg?s=612x612&w=0&k=20&c=vg7tu6EMWcubtJ6BxeR8xsAqNzk60spxF1owdho2bqg=" width="254" height="37"/>
+                  </svg>                  
+            </div>
+            <span class="App__username">Aryan Rajput</span>
+            <div class="App__expand-arrow">
+              <svg role="img" height="16" width="16" viewBox="0 0 16 16"><path d="M13 10L8 4.206 3 10z" fill="#fff"></path></svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="App__nav-bar">
+        <div class="App__logo">
+            <svg viewBox="0 0 254 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <image href="https://static.vecteezy.com/system/resources/previews/005/520/836/original/letter-a-logo-initial-with-circle-shape-swoosh-alphabet-logotype-simple-and-minimalist-free-vector.jpg" width="264" height="40"/>
+              </svg>              
+        </div>
+        <div class="App__categories-nav">
+          <div class="App__category-item App__category-item--selected">
+            <div class="icon"><svg viewBox="0 0 576 512" width="100" title="home">
+      <path d="M280" fill="#fff"/>
+    </svg></div>
+            <span>Home</span>
+          </div>
+          <div class="App__category-item">
+            <div class="icon"><svg viewBox="0 0 512 512" width="100" title="search">
+      <path d="M505 "/>
+    </svg></div>
+            <span>Search</span>
+          </div>
+          <div class="App__category-item">
+            <div class="icon"><svg width="112" height="111" viewBox="0 0 112 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="8" height="111" fill="#C4C4C4"/>
+    <rect x="24" width="8" height="111" fill="#C4C4C4"/>
+    <rect width="7.96484" height="111.503" transform="matrix(0.869849 -0.493319 0.506711 0.862116 48 14.7345)" fill="#C4C4C4"/>
+    </svg>
+    </div>
+            <span>Your Library</span>
+          </div>
+        </div>
+        <div class="App__playlists-nav">
+          <div class="App__category-item">
+            <div class="icon"><svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16" fill="#c4c4c4"><path d="M14 7H9V2H7v5H2v2h5v5h2V9h5z"></path><path fill="none" d="M0 0h16v16H0z"></path></svg>
+    </div>
+            <span>Create Playlist</span>
+          </div>
+          <div class="App__category-item">
+            <div class="icon"><svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16"><path fill="none" d="M0 0h16v16H0z"></path><path d="M13.797 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253c-.77.77-1.194 1.794-1.194 2.883s.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195a4.052 4.052 0 001.195-2.883 4.057 4.057 0 00-1.196-2.883z" fill="#c4c4c4"></path></svg>
+    </div>
+            <span>Liked Songs</span>
+          </div>
+          <div class="App__category-item">
+            <div class="icon"><svg role="img" width="12" height="12" viewBox="0 0 527 483" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 264" fill="#1ED760"></path></svg>
+    </div>
+            <span>Your Episodes</span>
+          </div>
+        </div>
+        <div class="App__divider-container"><hr></div>
+
+      </div>
+      <div class="App__now-playing-bar">
+        <div class="function">
+          <div class="music">
+            <img
+              src="https://images.genius.com/31c7d09c4aa1b324bb911d0db72453a3.1000x1000x1.jpg"
+              alt=""
+            />
+            <div class="details">
+              <div class="name">Dance Monkey</div>
+              <div class="artist">Tones and I</div>
+            </div>
+            <div class="love">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2589/2589175.png"
+                alt="love"
+              />
+            </div>
+          </div>
+          <div class="playback">
+            <div class="upper">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/724/724979.png"
+                alt="shuffle"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3318/3318703.png"
+                alt="back"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2088/2088562.png"
+                alt="pause"
+                class="pause"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4211/4211386.png"
+                alt="forward"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4146/4146819.png"
+                alt="loop"
+              />
+              <img
+              src="share.png"
+              alt="loop"
+            />
+            </div>
+            <div class="lower">
+              <div class="text">0:00</div>
+              <div class="line"></div>
+              <div class="text">3:46</div>
+            </div>
+          </div>
+          <div class="control">
+            <div class="images">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/98/98068.png"
+                alt="queue"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2777/2777142.png"
+                alt="device"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/25/25695.png"
+                alt="volume"
+              />
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="App__main-view">
+        <div class="App__top-gradient"></div>
+        <div class="App__header-placeholder"></div>
+        <section class="App__section App__quick-links">
+          <h1>Good afternoon</h1>
+          <div class="App__quick-links-container">
+            <div class="App__quick-link">
+              <div class="App__quick-link-featured-img">♥</div>
+              <span>Liked Songs</span>
+            </div>
+            <div class="App__quick-link">
+              <div class="App__quick-link-featured-img"> 
+              </div>
+              <span>Daily Mix</span>
+            </div>
+            <div class="App__quick-link">
+              <div class="App__quick-link-featured-img"></div>
+              <span>Hindi Songs</span>
+            </div>
+            <div class="App__quick-link">
+              <div class="App__quick-link-featured-img"></div>
+              <span>Remix Hindi + English</span>
+            </div>
+            <div class="App__quick-link">
+              <div class="App__quick-link-featured-img"></div>
+              <span>Ed Sheeran</span>
+            </div>
+            <div class="App__quick-link">
+              <div class="App__quick-link-featured-img"></div>
+              <span>Gaming</span>
+            </div>
+          </div>
+        </section>
+        <section class="App__section App__your-shows">
+          <div class="App__section-header">
+            <h3>Podcast</h3>
+            <span>SEE ALL</span>
+          </div>
+          <div class="App__section-grid-container">
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>The Story of Mahabharat</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Short Wave</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Self Improvements</h3>
+              <span>Rafael Eliasen</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Planet Money</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>How I Built this...</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Horror Podcast</h3>
+              <span>Saurabh Gandhi</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Short Wave</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Post Reports</h3>
+              <span>The Washington Post</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Rich Dad Poor Dad</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>How I Built this...</h3>
+              <span>NPR</span>
+            </div>
+          </div>
+        </section>
+        <section class="App__section App__your-shows">
+          <div class="App__section-header">
+            <h3>Your top mixes</h3>
+            <span>SEE ALL</span>
+          </div>
+          <div class="App__section-grid-container">
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>TED Radio Hour</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Short Wave</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Standup Comedy</h3>
+              <span>Muskaan</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Planet Money</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>How I Built this...</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>TED Radio Hour</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Short Wave</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Post Reports</h3>
+              <span>The Washington Post</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Planet Money</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>How I Built this...</h3>
+              <span>NPR</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
